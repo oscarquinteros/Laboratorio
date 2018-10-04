@@ -1,21 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javaapplication9;
 
-/**
- *
- * @author oquinter
- */
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
 public class JavaApplication9 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ArrayList<Persona> lista = new ArrayList<Persona>();
+        
+        LinkedList lista2 = new LinkedList();
+        Persona p1 =new Persona("Juan");
+        lista.add(p1);
+        lista.add(new Persona("Pedro"));
+        for (Persona object : lista) {
+            System.out.println(object);
+        }        
+        lista.remove(p1);
+        System.out.println("Despues de remover:");
+        for (Persona object : lista) {
+            System.out.println(object);
+        }        
+        
+        
+        
+        
     }
     
 }
